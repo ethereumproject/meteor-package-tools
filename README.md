@@ -38,7 +38,7 @@ When used as a Meteor package, the following units are possible for some methods
 
 **Note** This is only available when used as a Meteor package.
 
-It gives you the latest price for ether based on the [kraken.com public API](https://api.kraken.com/0/public/Ticker?pair=XETHZEUR,XXBTZUSD).
+It gives you the latest price for ether based on the [kraken.com public API](https://api.kraken.com/0/public/Ticker?pair=XETCZEUR,XXBTZUSD).
 `EthTools.ticker` is a reactive collection, so when used in a reactive function it will re-run this function when the price is updated.
 
 The ticker will be updated every 30 seconds.
