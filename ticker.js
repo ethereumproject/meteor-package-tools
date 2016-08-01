@@ -28,10 +28,9 @@ var updatePrice = function(e, res){
 };
 
 // update right away
-HTTP.get('https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD,EUR', updatePrice);
-    
+HTTP.get('https://min-api.cryptocompare.com/data/price?fsym=ETC&tsyms=BTC,USD,EUR', updatePrice);
 
 // update prices
 Meteor.setInterval(function(){
-    HTTP.get('https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD,EUR', updatePrice);    
+    HTTP.get('https://min-api.cryptocompare.com/data/price?fsym=ETC&tsyms=BTC,USD,EUR', updatePrice);
 }, 1000 * 30);
