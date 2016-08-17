@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'etc:tools',
+  name: 'ethereumclassic:tools',
   summary: 'Helper functions for dapps',
   version: '0.5.2',
   git: 'http://github.com/ethereumproject/meteor-package-tools'
@@ -16,7 +16,7 @@ Package.onUse(function(api) {
   //api.use('numeral:numeral@1.5.3', ['client', 'server']);
   api.use('3stack:bignumber@2.0.0', 'client');
   // !EPROJECT Restored web3 will be required
-  api.use('etc:web3@0.15.1', ['client', 'server']);
+  api.use('ethereumclassic:web3@0.15.1', ['client', 'server']);
   api.use('frozeman:persistent-minimongo@0.1.8', 'client');
   api.use('frozeman:storage@0.1.8', 'client');
   api.export(['EthTools'], ['client', 'server']);
@@ -27,6 +27,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('etc:tools');
+  api.use('ethereumclassic:tools');
   api.addFiles('ethtools-tests.js', ['client', 'server']);
 });
